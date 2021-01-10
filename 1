@@ -1,0 +1,31 @@
+a = int(input())
+b = int(input())
+znak = input('Введите знак математической операции')
+if znak =="+":
+    result=a+b
+
+if znak =="-":
+    result=a-b
+
+if znak =="*":
+    result=a*b
+
+if znak =="/" and b!=0:
+    result=a/b
+else:
+    print("Деление на 0!")
+
+if (znak =="%" or znak =="mod") and b!=0:
+    result=a%b
+else:
+    print("Деление на 0!")
+
+if znak =="**" or znak =="pow":
+    result=a**b
+
+if (znak =="div" or znak =="//") and b!=0:
+    result=a//b
+else:
+    print("Деление на 0!")
+
+print(result)
